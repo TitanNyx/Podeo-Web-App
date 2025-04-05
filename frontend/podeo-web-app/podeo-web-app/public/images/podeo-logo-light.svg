@@ -1,0 +1,42 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 638 286" width="638" height="286">
+	<title>podeo-logo</title>
+	<defs>
+		<image  width="56" height="81" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAABRAQMAAAC9s/fPAAAAAXNSR0IB2cksfwAAAAZQTFRF////AAAAVcLTfgAAAAJ0Uk5TAP9bkSK1AAAAgElEQVR4nOXQsRHCMAwFUAlyR7qwQUbJaLE3I5vEG+AuvksisL9U2AcNLS78Okn/M+GxvL/UQ/IOxjtMPZQLJFa9uqhBjWpiOTqaHRyeR/G6Qz6lSNI4u89Oj9/8Nq/Za/fcNtw3rlByDstT5QtNfl/3Y31Zf9an9ptXlv30974AUBnBKS00ktEAAAAASUVORK5CYII="/>
+		<image  width="65" height="66" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABCAQMAAAAyrSmoAAAAAXNSR0IB2cksfwAAAAZQTFRF////AAAAVcLTfgAAAAJ0Uk5TAP9bkSK1AAAA/UlEQVR4nKWSQQ6CQAxFWzTRHd4AEg+CxoMN3gxuMtxAd5oo+FqGgLJ0weSRmba/v1URqRrl5Nu85H5wKqK8t04DV9ca0h5qT9DuAfFQJb9Bzz1EAG8zKNTi2dRDLXii9qSexIla72OUrlTSteeehBAZQg3lN8oX8bmHyG+/WkRq7h5OXYnYIdOqMUW9EyplmElUQ22Nca6IljWEzOm6IOK/qIiQOfE/zfmGdbW1Fl3Sj3rr7aff5MHkRnLoy7XkpHuKrKqB8F5Hx5lHe3nZPCApfTLztBaznOdbNdPMffrkTBvhu+Fbgoq0Ob5DFmw9jxuGHCOukW0kecf6yQeJK7jDxmaJ7QAAAABJRU5ErkJggg=="/>
+		<image  width="66" height="87" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABXAQMAAACKgQGDAAAAAXNSR0IB2cksfwAAAAZQTFRF////AAAAVcLTfgAAAAJ0Uk5TAP9bkSK1AAABCUlEQVR4nN2SwY3CMBBFx8tKcCMrDhzDVgAdABVQw3ZABw4dUFLcASUkHSQ3IkHM/2NHJgvHPW1OL5Lnz8z/Y0S/eePMPyLfzQLNGzGBtqXUayUv0i1JpsfPF2l6RVFGQoHI+QhCgUiTgWyh2iPyEokigSY3uS+aSPXKkyCsSg5T3D8lr5S6GTs6k1dtJnhMqlecx5ltCYI8ye0GOqGxLZyxRSIuijcvlFcg+/FC3o+JvvwNvev2NMsvCpNyD1LaLeybyA++RIJX6pD6p66pp+rk9Iph1F38ngrkFFL47mNGfl+O00oJPqWaMoeWyGUzuggIxnuhDLLmNaG4zZXY/qDE1OMl2h/MLw8oAPjYvAM43QAAAABJRU5ErkJggg=="/>
+		<image  width="63" height="66" id="img4" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAABCAQMAAADaLZyDAAAAAXNSR0IB2cksfwAAAAZQTFRF////AAAAVcLTfgAAAAJ0Uk5TAP9bkSK1AAAA8ElEQVR4nLWSsXKDMBBEd7FnoMNdSvtPSJfPEvoz+BNTpoMOzRjkPcmWxy7SpXsj3Z32dkUAzlUAgXrFdDHoBmxHgwi7IA43ge9pJVAR0c6C5USrBUJDuF4QK6YmtZH7O3hqzPizYqTGWJ1BrNQ5sZ1Dg/N1ESwnTV94vkpMvRqM31IQ2A2+B/cCm0AiCyBudP0TbCnE+AnOMSnVEbPS/4D8lrT9BUmqIIt/By1oK5fdE9RryLaYP8mo7JjC6obpZaZ89n6XvYLwNQtKBCWdV14pwe1IDXtEWcItcad++wDWplcEqlZkyX9ImylvfxvgDm6ynD/WVnIEAAAAAElFTkSuQmCC"/>
+		<image  width="65" height="66" id="img5" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABCAQMAAAAyrSmoAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TAP9bkSK1AAABAklEQVR4nJWS222DQBBFZ8BS8oc7wFIKsVMZdmemk3UH5C+RgM2ZyyKTKJFsiUUHsXded9zMjlfnzalH+9iL2mS5EnVns8sZ8plLtwP08glx0a0ZoGkHIbCQONFM0VzSELvlAOtPriARxsk1vaVC/ftMQCdw6L9eIaI2AxQvaNp5m8hZjyLqqMdcQf2JyqDjFSKRQ9RL8i1xbEv88a6r/qE2XTznB4lCn1Pcc/xZwb2+Qtvqf/e29KvOf0yjTIhZNQNTi3Guk1yn2yaRfGL2xYXFDzvImeIWvhUHw8vFVV+dludyX3ugjSCPxzKVfZFYOySx6+Ei1/QxWzQQLTY31s++Ae1YtMPTQSMXAAAAAElFTkSuQmCC"/>
+		<image  width="11" height="15" id="img6" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAPAQMAAAAI86dzAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA////pdmf3QAAAAJ0Uk5T/wDltzBKAAAAEUlEQVR4nGNkYGAEoo/viUEA3QEYcC57A6EAAAAASUVORK5CYII="/>
+		<image  width="15" height="15" id="img7" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPAQMAAAABGAcJAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA////pdmf3QAAAAJ0Uk5T/wDltzBKAAAAJUlEQVR4nGOUv8gIRPxgxL4ThJj3MjLXgpDgfxCSkAAhmRAgAgAGQQpQdV0W8gAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #0000ff } 
+		.s1 { fill: #ffffff } 
+	</style>
+	<g>
+		<g>
+			<path fill-rule="evenodd" class="s0" d="m221.5 194.3c0 27.3-22.1 49.3-49.3 49.3h-102.7c-27.2 0-49.3-22-49.3-49.3v-102.6c0-27.3 22.1-49.3 49.3-49.3h102.7c27.2 0 49.3 22 49.3 49.3z"/>
+			<g>
+				<g>
+					<path fill-rule="evenodd" class="s1" d="m175.2 149.3c0 5.8-4.4 10.5-9.9 10.5-5.4 0-9.8-4.7-9.8-10.5v-29.8c0-5.8 4.4-10.5 9.8-10.5 5.5 0 9.9 4.7 9.9 10.5z"/>
+					<path fill-rule="evenodd" class="s1" d="m146.8 167.6c0 5.8-4.4 10.6-9.8 10.6-5.4 0-9.9-4.8-9.9-10.6v-68.9c0-5.9 4.5-10.6 9.9-10.6 5.4 0 9.8 4.7 9.8 10.6z"/>
+					<path fill-rule="evenodd" class="s1" d="m118.5 167.6c0 5.8-4.5 10.6-9.9 10.6-5.4 0-9.8-4.8-9.8-10.6v-68.9c0-5.9 4.4-10.6 9.8-10.6 5.4 0 9.9 4.7 9.9 10.6z"/>
+					<path fill-rule="evenodd" class="s1" d="m90.1 193.9c0 5.8-4.4 10.6-9.8 10.6-5.5 0-9.9-4.8-9.9-10.6v-74.5c0-5.8 4.4-10.6 9.9-10.6 5.4 0 9.8 4.8 9.8 10.6z"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<use  href="#img1" x="247" y="100"/>
+				<use  href="#img2" x="309" y="116"/>
+				<use  href="#img3" x="380" y="95"/>
+				<use  href="#img4" x="456" y="116"/>
+				<use  href="#img5" x="525" y="116"/>
+			</g>
+		</g>
+		<g>
+			<use  href="#img6" x="591" y="115"/>
+			<use  href="#img7" x="603" y="115"/>
+		</g>
+	</g>
+</svg>

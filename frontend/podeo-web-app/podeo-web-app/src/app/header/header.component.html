@@ -1,0 +1,30 @@
+<nav [ngClass]="navClass">
+    <div class="container">
+      <a class="navbar-brand cursor" (click)="navigateHome()">
+        <img [src]="logoUrl" alt="Logo" height="40" />
+      </a>
+      <button class="navbar-toggler" type="button" (click)="toggleCollapse()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item cursor">
+            <a class="nav-link" (click)="navigateHome()">Home</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <!-- Theme Switcher Dropdown -->
+          <select #themeSelect (change)="switchTheme(themeSelect.value)" class="form-select me-2" style="max-width: 150px;">
+            <option value="theme-dark" selected>Dark</option>
+            <option value="theme-light">Light</option>
+            <option value="theme-christmas">Christmas</option>
+          </select>
+          
+          
+          <button *ngIf="!isLoggedIn" (click)="login()" [ngClass]="loginButton">Login</button>
+          <button *ngIf="isLoggedIn" (click)="logout()" [ngClass]="loginButton">Logout</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  

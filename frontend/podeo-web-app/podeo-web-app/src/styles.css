@@ -1,0 +1,50 @@
+.theme-dark {
+    background-color: #1A1A1A;
+}
+
+.theme-light {
+    background-color: #ffffff;
+}
+
+.theme-christmas {
+    background-color: #1A1A1A;
+    background-image: url('/images/snowflakes.svg');
+    background-repeat: repeat;
+    animation: snowFall 30s linear infinite;
+}
+
+.fixed-bottom-bg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  button:not(:disabled) {
+    cursor: pointer !important;
+  }
+
+@keyframes snowFall {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 1000px; /* Adjust based on your pattern's size */
+    }
+  }
+
+@media only screen and (max-width: 1023px) {
+    .theme-dark {
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .theme-christmas {
+        background-image: url('/images/snowflakes-mobile.svg');
+    }
+}
+
