@@ -23,6 +23,8 @@ export class ThemeService {
         bgImg.src = '/images/waves-dark.svg';
       } else if (theme === 'theme-christmas') {
         bgImg.src = '/images/waves-christmas.svg';
+      }else if (theme === 'theme-easter') {
+        bgImg.src = '/images/waves-easter.svg';
       }
     }
 

@@ -1,6 +1,21 @@
 <div class="home-container">
-    <h1>Welcome to Podeo</h1>
-    <p>
-      This is your home page. The text color changes based on the selected theme.
-    </p>
+  <ng-container *ngIf="showAudioPlayer; else noAudio">
+    <div class="audio-player">
+      <!-- Track Info -->
+      <div class="track-info">
+        <img [src]="imageUrl" alt="Album Cover" class="track-image">
+        <div>
+          <div class="marquee">
+            <span class="h5 mb-1">{{ name }}</span>
+          </div>
+        </div>
+      </div>
+      <audio controls [src]="mp3Url"></audio>
+      </div>
+  </ng-container>
+  
+  <ng-template #noAudio>
+    <p class="no-audio-text">Why don't you try one of our exclusive podcasts?</p>
+    <button [ngClass]="buttonClass" (click)="surpriseMe()">Surprise Me</button>
+  </ng-template>
 </div>

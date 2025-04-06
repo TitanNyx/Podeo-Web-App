@@ -13,6 +13,13 @@
     animation: snowFall 30s linear infinite;
 }
 
+.theme-easter {
+    background-color: #ffffff;
+    background-image: url('/images/eastereggs.svg');
+    background-repeat: repeat;
+    animation: snowFall 30s linear infinite;
+}
+
 .fixed-bottom-bg {
     position: fixed;
     bottom: 0;

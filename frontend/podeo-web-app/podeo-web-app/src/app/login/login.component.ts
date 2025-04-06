@@ -34,6 +34,8 @@ export class LoginComponent {
       this.loginButton = "btn btn-primary me-2";
     } else if (theme === 'theme-christmas') {
       this.loginButton = "btn btn-danger me-2";
+    }else if (theme === 'theme-easter') {
+      this.loginButton = "btn btn-info me-2";
     }
   }
 

@@ -77,7 +77,6 @@ db.run(`
       }
     );
   });
-  
 
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
@@ -100,34 +99,57 @@ app.post('/api/login', (req, res) => {
         { expiresIn: '1h' }
       );
 
-      return res.json({ message: "Login successful.", token, isAdmin: !!user.isAdmin });
+      return res.json({ message: "Login successful.", token, isAdmin: !!user.isAdmin , userId: user.id});
     } else {
       return res.status(401).json({ error: "Invalid credentials." });
     }
   });
 });
 
-function authenticateToken(req, res, next) {
-  const authHeader = req.headers['authorization'];
-  const token = authHeader && authHeader.split(' ')[1];
-  if (!token) return res.status(401).json({ error: "Access token missing." });
-
-  jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
-    if (err) return res.status(403).json({ error: "Invalid token." });
-    req.user = user;
-    next();
+app.post('/api/podcasts', (req, res) => {
+  const { userId, mp3Url, imageUrl, name } = req.body;
+  
+  if (!userId || !mp3Url || !imageUrl || !name) {
+    return res.status(400).json({ error: 'Please provide userId, mp3Url, imageUrl, and name.' });
+  }  
+  const sql = `INSERT INTO podcasts (userId, mp3Url, imageUrl, name) VALUES (?, ?, ?, ?)`;
+  db.run(sql, [userId, mp3Url, imageUrl, name], function(err) {
+    if (err) {
+      console.error("Error inserting podcast:", err.message);
+      return res.status(500).json({ error: 'Failed to create podcast record.' });
+    }
+    res.status(201).json({ message: 'Podcast record created successfully.', podcastId: this.lastID });
   });
-}
-
-app.get('/api/dashboard', authenticateToken, (req, res) => {
-  if (req.user.isAdmin) {
-    res.json({ message: "Welcome to the admin dashboard.", user: req.user });
-  } else {
-    res.status(403).json({ error: "Access denied. Not an admin." });
-  }
 });
 
-// Start the server
+app.get('/api/podcasts/:userId', (req, res) => {
+  const userId = req.params.userId;
+  const sql = `SELECT * FROM podcasts WHERE userId = ?`;
+  db.all(sql, [userId], (err, rows) => {
+    if (err) {
+      console.error("Error fetching podcasts:", err.message);
+      return res.status(500).json({ error: 'Failed to fetch podcasts.' });
+    }
+    res.json({ podcasts: rows });
+  });
+});
+
+app.delete('/api/podcasts/:podcastId', (req, res) => {
+  const podcastId = req.params.podcastId;
+  const sql = `DELETE FROM podcasts WHERE id = ?`;
+  db.run(sql, [podcastId], function(err) {
+    if (err) {
+      console.error("Error deleting podcast:", err.message);
+      return res.status(500).json({ error: 'Failed to delete podcast.' });
+    }
+    if (this.changes === 0) {
+      // No row deleted means the podcast wasn't found.
+      return res.status(404).json({ error: 'Podcast not found.' });
+    }
+    res.json({ message: 'Podcast deleted successfully.', podcastId });
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

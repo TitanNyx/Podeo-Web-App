@@ -19,7 +19,6 @@ export class HeaderComponent {
   navClass: string = "navbar navbar-expand-lg navbar-dark bg-dark";
   logoUrl: string = "/images/podeo-logo.svg";
   loginButton: string = "btn btn-primary me-2";
-
   constructor(
     private themeService: ThemeService, 
     private router: Router, 
@@ -32,14 +31,15 @@ export class HeaderComponent {
     
     // Subscribe to authentication status
     this.authService.isLoggedIn$.subscribe(status => {
-      console.log('function called');
       this.isLoggedIn = status;
     });
   }
   
   navigateHome(): void {
-    console.log('go to home');
     this.router.navigate(['/']);
+  }
+  navigateDashboard(): void {
+    this.router.navigate(['/dashboard']);
   }
 
   toggleCollapse(): void {
@@ -75,9 +75,13 @@ export class HeaderComponent {
       this.logoUrl = "/images/podeo-logo.svg"; 
       this.loginButton = "btn btn-primary me-2";
     } else if (theme === 'theme-christmas') {
-      this.navClass = "navbar navbar-expand-lg navbar-dark bg-dark";
+      this.navClass = "navbar navbar-expand-lg navbar-light bg-light";
       this.logoUrl = "/images/podeo-logo-christmas.svg"; 
       this.loginButton = "btn btn-danger me-2";
+    }else if (theme === 'theme-easter') {
+      this.navClass = "navbar navbar-expand-lg navbar-light bg-light";
+      this.logoUrl = "/images/podeo-logo-easter.svg"; 
+      this.loginButton = "btn btn-info me-2";
     }
   }
 }

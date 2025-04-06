@@ -121,6 +121,8 @@ export class DashboardComponent {
       this.buttonClass = "btn btn-primary me-2";
     } else if (theme === 'theme-christmas') {
       this.buttonClass = "btn btn-danger me-2";
+    }else if (theme === 'theme-easter') {
+      this.buttonClass = "btn btn-info me-2";
     }
   }
 
