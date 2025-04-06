@@ -1,21 +1,21 @@
 # Podeo Web App
-
+\
 Podeo Web App is a full-stack application featuring an Angular frontend and a Node.js/Express backend. The project includes user authentication, white-labeling support, and an admin dashboard where authorized users can generate, preview, and manage podcast shareable links. Additionally, the project includes Docker and GitHub Actions configuration for CI/CD and deployment.
 
 ***
 
 ## Features
 
-* User Authentication:
+* **User Authentication:**
 Users can log in via a secure login page. Authentication tokens are stored in local storage, and unauthorized access redirects to the login page.
 
-* White-Labeling:
+* **White-Labeling:**
 Dynamic theme support allows the app’s look and feel to be adjusted (e.g., theme-light, theme-dark, theme-christmas, etc.). The theme is preserved between sessions using local storage.
 
-* Admin Dashboard:
+* **Admin Dashboard:**
 Admin users can generate shareable podcast links by providing an MP3 URL, an image URL, and an episode name. The dashboard displays previews (audio and image), a table of previously generated podcasts, and options to play, copy, or delete records.
 
-* Deployment Ready:
+* **Deployment Ready:**
 The project includes Dockerfiles for both the frontend and backend, and GitHub Actions workflows to automate the build and deployment process.
 
 ***
