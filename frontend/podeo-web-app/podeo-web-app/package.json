@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:podeo-web-app": "node dist/podeo-web-app/server/server.mjs"
+    "serve:ssr:podeo-web-app": "node dist/podeo-web-app/server/server.mjs",
+    "build:ssr": "ng build --configuration production && ng run podeo-web-app:server:production"
+
   },
   "private": true,
   "dependencies": {
@@ -21,6 +23,7 @@
     "@angular/router": "^19.2.0",
     "@angular/ssr": "^19.2.6",
     "@ng-bootstrap/ng-bootstrap": "^18.0.0",
+    "@nguniversal/express-engine": "^7.0.2",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "express": "^4.18.2",
