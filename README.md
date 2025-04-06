@@ -22,7 +22,7 @@ The project includes Dockerfiles for both the frontend and backend, and GitHub A
 
 ## Prerequisites
 
-* Node.js (version 16 or later) and npm
+* Node.js (version 18 or later) and npm
 
 * Angular CLI installed globally (npm install -g @angular/cli)
 

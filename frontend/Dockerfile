@@ -1,5 +1,5 @@
 # Stage 1: Build the Angular app
-FROM node:16 AS build
+FROM node:18 AS build
 WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package*.json ./
