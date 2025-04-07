@@ -32,6 +32,12 @@ The project includes Dockerfiles for both the frontend and backend, and GitHub A
 
 ***
 
+## White-labeling:
+
+The web app offers four preset themes that users can switch between. Each theme has its own colors, logos, and fonts, ensuring the app’s core functionality remains unchanged.
+
+***
+
 ## Installation
 **Frontend (Angular)**
 * Clone the repository:
