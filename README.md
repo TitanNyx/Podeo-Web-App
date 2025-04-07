@@ -4,6 +4,15 @@ Podeo Web App is a full-stack application featuring an Angular frontend and a No
 
 ***
 
+## Admin Credentials (Demo Only)
+
+For testing purposes, you can log in to the admin dashboard using the following credentials:
+
+- **Username:** podeoadmin
+- **Password:** admin
+
+***
+
 ## Features
 
 * **User Authentication:**
